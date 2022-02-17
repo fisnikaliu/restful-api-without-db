@@ -3,6 +3,8 @@ version: 0.2
 
 phases:
   pre_build:
+    runtime-versions:
+      nodejs: 12  
     commands:
       - echo Installing source NPM dependencies...
       - npm install
@@ -20,5 +22,5 @@ artifacts:
   files:
     - server.js
     - package.json
-    - node_modules/async/*
-    - node_modules/lodash/*
+    - routes/*
+    - node_modules/*
