@@ -18,8 +18,7 @@ phases:
 # ExpressJS apps will need other artifact directories included (bin/*, public/*, routes/*, views/* etc).
 artifacts:
   files:
-    - app.js
-    - index.html
+    - server.js
     - package.json
     - node_modules/async/*
     - node_modules/lodash/*
